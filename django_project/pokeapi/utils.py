@@ -22,7 +22,7 @@ def pokemon_list():
 def save_cell_list():
     poke_data = pokemon_list()
     PokemonData.objects.create(
-        date=timezone.now(),
+        #date=timezone.now(),
         json_data=poke_data
     )
     poke_list = []
