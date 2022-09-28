@@ -2,11 +2,11 @@ from django.db import models
 
 # Create your models here.
 class PokemonData(models.Model):
-    #date = models.DateTimeField()
+    date = models.DateTimeField()
     json_data = models.JSONField()
 
-    # def __str__(self):
-    #     return self.date
+    def __str__(self):
+        return self.date
 
 
 class Pokemon(models.Model):
